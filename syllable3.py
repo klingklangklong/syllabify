@@ -2,9 +2,9 @@
 ## apart from print statements this involves: functools.reduce() and list(x) to get len() of map object
 
 import re, copy, sys, random, functools
-from cmuparser3 import CMUtranscribe  # import Py3 version
-from syllable_types3 import Cluster, Consonant, Vowel, Empty, Rime, Syllable  # import Py3 version
-from phoneme_types import * 
+from syllabify.cmuparser3 import CMUtranscribe  # import Py3 version
+from syllabify.syllable_types3 import Cluster, Consonant, Vowel, Empty, Rime, Syllable  # import Py3 version
+from syllabify.phoneme_types import * 
 
 phoneme_classify = re.compile('''
                         ((?P<Vowel>AO|UW|EH|AH|AA|IY|IH|UH|AE|AW|AY|ER|EY|OW|OY)
